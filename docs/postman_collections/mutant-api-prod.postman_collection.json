@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "3a58b1f8-acd3-4f9a-ba67-b9473805a7de",
+		"name": "mutant-api-prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Is Mutant - Ejemplo Básico propuesto",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Is Mutant - Ejemplo diferente",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATGCGA\", \"CAGTGC\", \"TTATAT\", \"AAAAGG\", \"CCACTA\", \"TAACTG\"]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Is Mutant - Enviando ADN de un humano",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATGCTA\",\"CAGTTC\",\"TTATGT\",\"AGAATG\",\"CCCGTA\",\"TCACTG\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Is Mutant - Matriz 7x7 - mutante",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"CCCATCT\",\"ACGAGAC\",\"GGAACCC\",\"AACCTGT\",\"ACGTTAA\",\"AACCGGA\",\"TTTTTCC\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Is Mutant -Matriz 7x7 - humano",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"CCCATCT\",\"ACGGGAC\",\"GGAACCC\",\"AACCTGT\",\"ACGTTAA\",\"AACCGGA\",\"TTTATCC\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matriz nula",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matriz vacia con espacios",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"     \"]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matriz con cadenas de longitudes diferentes",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATGCGA\", \"CAGTGC\", \"TTATGT\", \"AGAAGG\", \"CCCCTA\", \"TCACTGA\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matriz con caracteres diferentes a los permitidos",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATGCGA\", \"CAGTGC\", \"TTATGR\", \"AGAAGG\", \"CCCCTA\", \"TCACTA\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "matriz con cadenas de logitud menor a  4",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dna\": [\"ATG\", \"CAG\", \"TTA\", \"AGA\", \"CCC\", \"TCA\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mutant-api-meli.herokuapp.com/magneto/v1/stats",
+					"protocol": "https",
+					"host": [
+						"mutant-api-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"magneto",
+						"v1",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

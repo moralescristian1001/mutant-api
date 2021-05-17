@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /magneto
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bf29d4bc1fefc1:49061270@us-cdbr-east-03.cleardb.com/heroku_45f6f4b389c9dc4?reconnect=true
+    username: bf29d4bc1fefc1
+    password: 49061270
+    initialization-mode: always
+    schema: classpath:schema.sql
+
+cache:
+  time: 1
+  defaultTime: 1
