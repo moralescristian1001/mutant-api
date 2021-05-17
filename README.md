@@ -69,7 +69,7 @@ Para el consumo de los servicios en nube, se debe abrir un cliente que permita c
 
 ### 8.2. Local:
 
-Para el consumo de los servicios en local, lo primero que se debe hacer es ejecutar el comando `gradlew clean bootRun` en la raíz del proyecto.
+Para el consumo de los servicios en local, lo primero que se debe hacer es configurar el usuario de la base de datos de MySQL, luego de esto se debe ejecutar el comando `gradlew clean bootRun` en la raíz del proyecto.
 
 Luego de tener la aplicación corriendo, se debe abrir un cliente que permita consumir el API (Ej: postman, insomnia, etc).
 
